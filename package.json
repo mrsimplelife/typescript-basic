@@ -1,0 +1,24 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrsimplelife/typescript-basic.git"
+  },
+  "author": "youme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrsimplelife/typescript-basic/issues"
+  },
+  "homepage": "https://github.com/mrsimplelife/typescript-basic#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "eslint": "^7.21.0"
+  }
+}
