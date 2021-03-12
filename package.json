@@ -1,5 +1,5 @@
 {
-  "name": "typescript",
+  "name": "typescript-basic",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,5 +20,8 @@
     "@typescript-eslint/eslint-plugin": "^4.17.0",
     "@typescript-eslint/parser": "^4.17.0",
     "eslint": "^7.21.0"
+  },
+  "dependencies": {
+    "typescript": "^4.2.3"
   }
 }
