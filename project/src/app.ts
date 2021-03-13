@@ -1,4 +1,7 @@
 "use strict";
+
+import axios from "axios";
+import * as Chart from "chart.js";
 // utils
 function $(selector: string) {
   return document.querySelector(selector);
@@ -9,7 +12,6 @@ function getUnixTimestamp(date: string | number | Date): number {
 }
 
 // DOM
-let a: Element | HTMLElement | HTMLParagraphElement;
 const confirmedTotal = $(".confirmed-total") as HTMLSpanElement;
 const deathsTotal = $(".deaths") as HTMLParagraphElement;
 const recoveredTotal = $(".recovered") as HTMLParagraphElement;
@@ -183,7 +185,7 @@ async function setupData() {
 }
 
 function renderChart(data: any, labels: any) {
-  var ctx = $("#lineChart").getContext("2d");
+  const ctx = $("#lineChart").getContext("2d");
   Chart.defaults.global.defaultFontColor = "#f5eaea";
   Chart.defaults.global.defaultFontFamily = "Exo 2";
   new Chart(ctx, {
