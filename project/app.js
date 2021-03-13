@@ -1,4 +1,6 @@
+//@ts-check
 // utils
+"use strict";
 function $(selector) {
   return document.querySelector(selector);
 }
@@ -34,8 +36,16 @@ function createSpinnerElement(id) {
   wrapperDiv.appendChild(spinnerDiv);
   return wrapperDiv;
 }
-
+/**
+ *
+ * @typedef {object} CovidSummary
+ * @property {Array<object>} Country
+ */
 // api
+/**
+ *
+ * @returns {Promise<CovidSummary>}
+ */
 function fetchCovidSummary() {
   const url = "https://api.covid19api.com/summary";
   return axios.get(url);
